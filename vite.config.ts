@@ -11,6 +11,7 @@ import { githubRepoLink } from './metadata'
 
 export default defineConfig(async () => {
   return {
+    
     assetsInclude: ['**/*.mov'],
     optimizeDeps: {
       // vitepress is aliased with replacement `join(DIST_CLIENT_PATH, '/index')`
