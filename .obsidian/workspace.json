@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
+                "file": "笔记/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +81,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -103,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
+                "file": "笔记/index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md"
+                "file": "笔记/index.md"
               }
             }
           },
@@ -175,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
+                "file": "笔记/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
+                "file": "笔记/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,21 +218,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "markdown-importer:打开 Markdown 格式转换器": false,
-      "random-note:开始漫游笔记": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-spaced-repetition:复习卡片": false,
-      "obsidian42-brat:BRAT": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "6a44ee5e7a883731",
   "lastOpenFiles": [
+    "🔌 知识库插件列表.md",
+    "2024-04-16.md",
+    "Untitled.canvas",
     "笔记/🧱 基础设施/🚢 Kubernetes/在 Kubernetes 集群上的 GPU 掉卡和故障排查.md",
     "笔记/📃 Archives/📖 文章/微信公众号文章/why技术/【求锤得锤的故事】Redis锁从面试连环炮聊到神仙打架。.md",
     "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
@@ -272,8 +269,6 @@
     "笔记/🧱 基础设施/🚢 Kubernetes/概念/污点 Taint.md",
     "笔记/🧱 基础设施/🚢 Kubernetes/概念/容忍度 Toleration.md",
     "笔记/🧱 基础设施/🚢 Kubernetes/概念/容器组亲和力 Pod Affinity.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/更好的 Kubernetes 理解方式.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/开发一个 Kubernetes Controller.md",
     "笔记/🧮 数学",
     "笔记/🧩 开源贡献/Kubernetes/assets/before-begin-easy-cla-sign-screenshot-3.png",
     "笔记/🧩 开源贡献/Kubernetes/assets",
