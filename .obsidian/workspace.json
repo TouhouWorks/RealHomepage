@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/index.md",
+                "file": "笔记/专辑/重金属/旋律死亡金属/\"Silence of Northern Hell\".md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "笔记/index.md",
+                "file": "笔记/专辑/重金属/旋律死亡金属/\"Silence of Northern Hell\".md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/index.md"
+                "file": "笔记/专辑/重金属/旋律死亡金属/\"Silence of Northern Hell\".md"
               }
             }
           },
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/index.md",
+                "file": "笔记/专辑/重金属/旋律死亡金属/\"Silence of Northern Hell\".md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/index.md",
+                "file": "笔记/专辑/重金属/旋律死亡金属/\"Silence of Northern Hell\".md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,8 +226,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a44ee5e7a883731",
+  "active": "b5dfc4e6c8287ee4",
   "lastOpenFiles": [
+    "笔记/专辑/重金属/旋律死亡金属/assets/Silence_of_Northern_Hell.jpeg",
+    "笔记/专辑/重金属/旋律死亡金属/assets/Silence of Northern Hell.jpeg",
+    "笔记/专辑/重金属/旋律死亡金属/Silence of Northern Hell.jpeg",
+    "笔记/专辑/重金属/旋律死亡金属/assets",
+    "vite.config.ts.timestamp-1713785967733-7bfc675652b6d.mjs",
+    "笔记/专辑/重金属/黑金属/\"Pentagram\" by Gorgoroth.md",
+    "笔记/专辑/重金属/旋律死亡金属/\"Silence of Northern Hell\".md",
+    "笔记/index.md",
+    "public/source-han-sans.ttf",
+    "笔记/8c0808ad-1725-411c-b8eb-81ec103634d1.pdf",
     "🔌 知识库插件列表.md",
     "2024-04-16.md",
     "Untitled.canvas",
@@ -256,7 +266,6 @@
     "笔记/🪄 Vtuber/assets/Pasted image 20231209163110.jpg",
     "笔记/🪄 Vtuber/assets/Pasted image 20231208233938.png",
     "笔记/🪄 Vtuber/assets/Pasted image 20231208233927.png",
-    "笔记/🪄 Vtuber/assets/Pasted image 20231208233632.png",
     "笔记/🧶 手作/布艺和裁缝/术语及词汇表.md",
     "笔记/🧶 手作/术语及词汇表.md",
     "笔记/🧶 手作/手缝针法.md",
@@ -265,16 +274,7 @@
     "笔记/🧱 基础设施/🚢 Kubernetes/面向 Kubernetes 开发.md",
     "笔记/🧱 基础设施/🚢 Kubernetes/迁移持久卷.md",
     "笔记/🧱 基础设施/🚢 Kubernetes/用方便好用的工具快速创建测试用的集群.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/节点亲和力 Node Affinity.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/污点 Taint.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/容忍度 Toleration.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/容器组亲和力 Pod Affinity.md",
     "笔记/🧮 数学",
-    "笔记/🧩 开源贡献/Kubernetes/assets/before-begin-easy-cla-sign-screenshot-3.png",
-    "笔记/🧩 开源贡献/Kubernetes/assets",
-    "笔记/🤖 AI 人工智能/assets/量子位智库AIGC产业全景图报告.pdf",
-    "笔记/🤖 AI 人工智能/assets/《GPT_4，通用人工智能的火花》论文内容精选与翻译_.pdf",
-    "笔记/🤖 AI 人工智能/assets/midjourney辞典.pdf",
     "未命名.canvas"
   ]
 }
