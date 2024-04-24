@@ -209,11 +209,13 @@ export default defineConfig({
     },
   },
   async buildEnd(siteConfig) {
-    await buildEndGenerateOpenGraphImages({
+    const newBuilder = buildEndGenerateOpenGraphImages({
       baseUrl: 'https://orangeplanet.club',
       category: {
         byLevel: 2,
+        fallbackWithFrontmatter: true,
       },
-    })(siteConfig)
+    })
+    await newBuilder(siteConfig)
   },
 })
