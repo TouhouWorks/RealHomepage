@@ -210,7 +210,7 @@ export default defineConfig({
   },
   async buildEnd(siteConfig) {
     await buildEndGenerateOpenGraphImages({
-      baseUrl: targetDomain,
+      baseUrl: 'https://orangeplanet.club',
       category: {
         byLevel: 2,
       },
