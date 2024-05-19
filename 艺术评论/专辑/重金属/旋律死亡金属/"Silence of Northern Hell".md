@@ -12,15 +12,15 @@ tags:
 
 ## 曲目表
 
-| 轨道号 | 歌曲名                        | 长度   |   
-| --- | -------------------------- | ---- | 
-| 01  | "Silence of Northern Hell" | 3:41 | 
-| 02  | "Crimson Symphony"         | 4:45 |
-| 03  | "Under the Sin of Grief"   | 5:42 |
-| 04  | "Legend of Dark"           | 4:03 |
-| 05  | "Requiem"                  | 4:49 |
-| 06  | "King of the Sacred Sword" | 4:50 |
-| 07  | "Infernal World"           | 3:25 |
+| 轨道号 | 歌曲名                        | 长度   |     |
+| --- | -------------------------- | ---- | --- |
+| 01  | "Silence of Northern Hell" | 3:41 |     |
+| 02  | "Crimson Symphony"         | 4:45 |     |
+| 03  | "Under the Sin of Grief"   | 5:42 |     |
+| 04  | "Legend of Dark"           | 4:03 |     |
+| 05  | "Requiem"                  | 4:49 |     |
+| 06  | "King of the Sacred Sword" | 4:50 |     |
+| 07  | "Infernal World"           | 3:25 |     |
 
 ## 乐评
 

@@ -62,5 +62,8 @@
     "vite-plugin-inspect": "^0.8.4",
     "vitepress": "^1.1.4",
     "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "nolebase": "link:"
   }
 }

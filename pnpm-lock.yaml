@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  nolebase:
+    specifier: 'link:'
+    version: 'link:'
+
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.18.0
