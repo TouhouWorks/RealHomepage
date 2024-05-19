@@ -8,7 +8,7 @@ tags:
 ## 专辑简介
 
 "The Redshift" 是芬兰旋律死亡金属乐队 Omnium Gatherum 的第四张录音室专辑，由 Candleight Records 在 2008年9月22日发售。这张专辑的歌词都是由在他们的上一张专辑的录制过程中加入的新主唱 Jukka Pelkonen 编写的。
-![专辑封面](./assets/The_Redshift-Omnium_Gatherum.jpeg)
+![专辑封面](./assets/theRedShift.jpg)
 
 ## 曲目
 
