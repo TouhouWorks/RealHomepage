@@ -1,5 +1,6 @@
 import process from 'node:process'
 import { defineConfig } from 'vitepress'
+import { fileURLToPath, URL } from 'node:url'
 import MarkdownItFootnote from 'markdown-it-footnote'
 import MarkdownItMathjax3 from 'markdown-it-mathjax3'
 
@@ -11,8 +12,19 @@ import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 import { githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
 import { creatorNames, creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
+import { replace } from 'lodash'
 
 export default defineConfig({
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPHero\.vue$/,
+          replacement: fileURLToPath(new URL('./theme/components/MyVPHero.vue', import.meta.url)),
+        }
+      ]
+    }
+  },
   vue: {
     template: {
       transformAssetUrls: {
@@ -164,6 +176,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '艺术评论', link: '/艺术评论/' },
       { text: '最近更新', link: '/toc' },
+      { text: '关于 Nólëbase', link: '/AboutNolebase'}
     ],
     sidebar,
   },

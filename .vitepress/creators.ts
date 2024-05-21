@@ -18,6 +18,25 @@ export interface Creator {
 
 const getAvatarUrl = (name: string) => `https://github.com/${name}.png`
 
+export const Authors: Creator[] = [
+  {
+    name: '朵琳',
+    avatar:'',
+    username: 'Dolyn157',
+    title: '地霊殿音楽収蔵館的主编',
+    desc: '地霊殿音楽収蔵館的主编和站长，负责本站的内容创作和维护',
+    links: [
+      { type: 'github', icon: 'github', link: 'https://github.com/Dolyn157' },
+      { type: 'twitter', icon: 'twitter', link: 'https://x.com/dolyn157' },
+    ],
+    mapByNameAliases: ['Gwyndolyn', '朵琳'],
+    mapByEmailAliases: [''],
+  }
+].map<Creator>((c) => {
+  c.avatar = c.avatar || getAvatarUrl(c.username)
+  return c as Creator
+})
+
 export const creators: Creator[] = [
   {
     name: '絢香猫',

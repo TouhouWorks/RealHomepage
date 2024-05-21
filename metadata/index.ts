@@ -1,6 +1,6 @@
 /** 文本 */
-export const siteName = 'Nólëbase'
-export const siteShortName = 'Nólëbase'
+export const siteName = '地霊殿音楽収蔵館'
+export const siteShortName = '地霊殿音楽収蔵'
 export const siteDescription = '朵琳的乐评一言堂'
 
 /** 文档所在目录 */

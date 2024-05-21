@@ -33,10 +33,12 @@ import {
 import { creators } from '../creators'
 
 import AppContainer from './components/AppContainer.vue'
+import AboutNolebase from './components/AboutNolebase.vue'
 import DocFooter from './components/DocFooter.vue'
 import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
+import MyDocTop from './components/MyDocTop.vue'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
@@ -55,6 +57,7 @@ const ExtendedTheme: Theme = {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       'doc-top': () => [
         h(NolebaseHighlightTargetedHeading),
+       
       ],
       'doc-footer-before': () => [
         h(DocFooter),
@@ -65,6 +68,9 @@ const ExtendedTheme: Theme = {
       ],
       'nav-screen-content-after': () => [
         h(NolebaseEnhancedReadabilitiesScreenMenu),
+      ],
+      "home-hero-before": () => [
+        h(MyDocTop),
       ],
     })
   },
@@ -77,6 +83,7 @@ const ExtendedTheme: Theme = {
      */
 
     app.component('HomePage', HomePage)
+    app.component('AboutNolebase', AboutNolebase)
     app.component('DocFooter', DocFooter)
     app.component('Share', Share)
     app.component('TocList', TocList)
