@@ -11,18 +11,20 @@ import {ref} from 'vue'
 .banner {
     position: relative;
     top: 0px;
-    right: -2px;
-    padding: 0px 0px -0px;
+    right: 0px;
+    margin-left: 22%;
+    margin-right: 21%;
+    padding: 0px 0px 0px;
     width: 1442px;
     height: -22px;
 
     .bannerPic {
     position: relative;
     top: 0px;
-    left: 0;
+    
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px 0px #00000040;
-    width: 1442px;
+    width: auto;
     height: 256px;
     }
   }
