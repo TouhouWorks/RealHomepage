@@ -69,5 +69,5 @@ export const creators: Creator[] = [
   return c as Creator
 })
 
-export const creatorNames = creators.map(c => c.name)
-export const creatorUsernames = creators.map(c => c.username || '')
+export const creatorNames = Authors.map(c => c.name)
+export const creatorUsernames = Authors.map(c => c.username || '')
