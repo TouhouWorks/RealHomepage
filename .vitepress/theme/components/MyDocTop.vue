@@ -9,11 +9,11 @@ import {ref} from 'vue'
 </template>
 <style> 
 .banner {
-    position: relative;
+    position: flex;
+    flex-direction: row;
     top: 0px;
     right: 0px;
-    margin-left: 22%;
-    margin-right: 21%;
+    margin: auto;
     padding: 0px 0px 0px;
     width: 1442px;
     height: -22px;

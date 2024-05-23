@@ -68,21 +68,6 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 </template>
 
 <style scoped>
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-
-  .bannerImg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
-  }
-}
 .VPHero {
   margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;
