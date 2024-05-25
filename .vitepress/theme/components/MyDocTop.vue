@@ -9,7 +9,8 @@ import {ref} from 'vue'
 </template>
 <style> 
 .banner {
-    position: flex;
+    z-index: 2;
+    position: relative;
     flex-direction: row;
     top: 0px;
     right: 0px;
@@ -27,5 +28,6 @@ import {ref} from 'vue'
     width: auto;
     height: 256px;
     }
+
   }
 </style>
