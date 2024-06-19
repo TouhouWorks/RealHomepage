@@ -38,7 +38,6 @@ import DocFooter from './components/DocFooter.vue'
 import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
-import MyDocTop from './components/MyDocTop.vue'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
@@ -68,9 +67,6 @@ const ExtendedTheme: Theme = {
       ],
       'nav-screen-content-after': () => [
         h(NolebaseEnhancedReadabilitiesScreenMenu),
-      ],
-      "home-hero-before": () => [
-        h(MyDocTop),
       ],
     })
   },

@@ -1,10 +1,10 @@
 /** 文本 */
-export const siteName = '地霊殿音楽収蔵館'
-export const siteShortName = '地霊殿音楽収蔵'
-export const siteDescription = '朵琳的乐评一言堂'
+export const siteName = '幻夢結社'
+export const siteShortName = '幻夢結社'
+export const siteDescription = '东方Project同人社团'
 
 /** 文档所在目录 */
-export const include = ['笔记', '生活','艺术评论']
+export const include = ['社团活动']
 
 /** Repo */
 export const githubRepoLink = 'https://github.com/Dolyn157/Dolyn-s-MusicReview'

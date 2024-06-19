@@ -137,6 +137,7 @@ export default defineConfig({
   themeConfig: {
     outline: { label: '页面大纲', level: 'deep' },
     darkModeSwitchLabel: '切换主题',
+    
     editLink: {
       pattern: `${githubRepoLink}/tree/main/:path`,
       text: '编辑本页面',
@@ -147,7 +148,7 @@ export default defineConfig({
     footer: {
       message: '用 <span style="color: #e25555;">&#9829;</span> 撰写',
       copyright:
-        '<a class="footer-cc-link" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> © 2022-PRESENT Nólëbase 的创作者们',
+        '<a class="footer-cc-link" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> © 2022-PRESENT 幻梦结社',
     },
     search: {
       provider: 'local',
@@ -174,8 +175,7 @@ export default defineConfig({
     },
     nav: [
       { text: '主页', link: '/' },
-      { text: '艺术评论', link: '/艺术评论/' },
-      { text: '最近更新', link: '/toc' },
+      { text: '社团动态', link: '/社团动态/' },
       { text: '关于 Nólëbase', link: '/AboutNolebase'}
     ],
     sidebar,

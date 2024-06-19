@@ -28,11 +28,11 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   <div class="VPHero" :class="{ 'has-image': image || heroImageSlotExists }">
     <div class="container">
 
-        <div v-if="image || heroImageSlotExists" class="image2">
+        <div v-if="image || heroImageSlotExists" class="image">
         <div class="image-container">
           <div class="image-bg" />
           <slot name="home-hero-image">
-            <VPImage v-if="image" class="image-src" :image="image" />
+           <VPImage v-if="image" class="image-src" :image="image" />
           </slot>
         </div>
       </div>
@@ -69,33 +69,17 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 
 <style scoped>
 .VPHero {
-  margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
+  margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * 3);
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;
+  top: 10%;
 }
-
-@media (min-width: 640px) {
-  .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 48px 64px;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 64px 64px;
-  }
-}
-
 .container {
-  display: flex;
+  display: block;
   flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  
   margin: 0 auto;
-  max-width: 1152px;
-}
-
-@media (min-width: 960px) {
-  .container {
-    flex-direction: column;
-  }
 }
 
 .main {
@@ -104,6 +88,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   order: 2;
   flex-grow: 1;
   flex-shrink: 0;
+  margin-top: 20%;
   margin-left: 15%;
 }
 
@@ -111,13 +96,13 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   text-align: center;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 860px) {
   .VPHero.has-image .container {
     text-align: left;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 860px) {
   .main {
     order: 1;
     width: calc((100% / 3) * 3);
@@ -144,18 +129,6 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   margin: 0 auto;
 }
 
-.name {
-  color: var(--vp-home-hero-name-color);
- 
-}
-
-.clip {
-  background: var(--vp-home-hero-name-background);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: var(--vp-home-hero-name-color);
-}
-
 @media (min-width: 640px) {
   .name,
   .text {
@@ -165,7 +138,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 860px) {
   .name,
   .text {
     line-height: 64px;
@@ -179,8 +152,9 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 }
 
 .tagline {
+  position: relative;
   padding-top: 8px;
-  max-width: 392px;
+  max-width: auto - 312px;
   line-height: 28px;
   font-size: 18px;
   font-weight: 500;
@@ -192,17 +166,9 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   margin: 0 auto;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 860px) {
   .tagline {
-    padding-top: 12px;
-    max-width: 576px;
-    line-height: 32px;
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 960px) {
-  .tagline {
+    padding-left: 16%;
     line-height: 36px;
     font-size: 24px;
   }
@@ -212,10 +178,37 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
+@media (min-width: 640px) {
+  .tagline {
+    left: -7%;
+    padding-top: 12px;
+    max-width: auto;
+    line-height: 32px;
+    font-size: 20px;
+  }
+  .VPHero.has-image .tagline {
+    margin: 0;
+  }
+}
+@media (max-width: 639px) {
+  .tagline
+  {
+    left: -8%;
+  }
+}
+
+
+.action{
+  margin-left: 6px;
+
+}
+
 .actions {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: -6px;
+  margin-left: -9px;
   padding-top: 24px;
   
 }
@@ -224,40 +217,24 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   justify-content: center;
 }
 
+@media (max-width: 639px) {
+  .actions {
+    left: -8%;
+  }
+}
+
 @media (min-width: 640px) {
   .actions {
+    justify-content: flex-start;
+    left: -10%;
     padding-top: 32px;
   }
 }
 
-@media (min-width: 960px) {
-  .VPHero.has-image .actions {
-    justify-content: flex-start;
-  }
-}
-
-.action {
-  flex-shrink: 0;
-  padding: 6px;
-}
-
-.image2 {
-  order: 1;
-  margin: -76px -24px -48px;
-}
-
-@media (min-width: 640px) {
-  .image2 {
-    margin: -108px -24px -48px;
-  }
-}
-
-@media (min-width: 960px) {
-  .image2 {
-    flex-grow: 1;
-    order: 2;
-    margin: 0;
-    min-height: 100%;
+@media (min-width: 860px) {
+  .actions {
+    left: -17.5%;
+    padding-top: 32px;
   }
 }
 
@@ -275,7 +252,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 860px) {
   .image-container {
     display: flex;
     justify-content: center;
@@ -308,7 +285,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 860px) {
   .image-bg {
     width: 320px;
     height: 320px;
@@ -328,15 +305,15 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 
 @media (min-width: 640px) {
   :deep(.image-src) {
-    max-width: 256px;
-    max-height: 256px;
+    max-width: 576px;
+    max-height: 576px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 860px) {
   :deep(.image-src) {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 860px;
+    max-height: 860px;
   }
 }
 </style>

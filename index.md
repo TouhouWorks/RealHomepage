@@ -2,20 +2,23 @@
 layout: home
 sidebar: false
 
-title: 地霊殿音楽収蔵館
-titleTemplate: 记录聆听，搜藏和畅想的地方
+title: 幻夢結社
+titleTemplate: 东方Project同人社团
 
 hero:
-  name: g~Nj$3J2^
-  text: 记录聆听，搜藏和畅想的地方
-  tagline: 欢迎来到地霊殿音楽収蔵館，它不仅是朵琳向大家分享自己听过音乐以及自己的乐评的地方，以后还会有更多的内容。
+  name: 
+  text: 
+  tagline: 这里是来自湛江的同人社团——幻梦结社。
+  image:
+    src: /Logo512.png
+    alt: GenmukessyaLogo
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /艺术评论/index
+      text: 社团最新动态
+      link: /社团动态/index
     - theme: alt
-      text: GitHub 上浏览
-      link: https://github.com/Dolyn157/Dolyn-s-MusicReview
+      text: 幻梦结社淘宝店
+      link: https://touhouworks.taobao.com/
 ---
 
 <HomePage />
