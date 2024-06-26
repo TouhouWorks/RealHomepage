@@ -70,7 +70,7 @@ export default defineConfig({
     ],
     ['meta', {
       name: 'author',
-      content: creatorNames.join(', '),
+      content: ' ',
     }],
     [
       'meta',

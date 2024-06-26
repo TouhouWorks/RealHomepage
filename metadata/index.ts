@@ -10,6 +10,6 @@ export const include = ['社团活动']
 export const githubRepoLink = 'https://github.com/Dolyn157/Dolyn-s-MusicReview'
 
 /** 无协议前缀域名 */
-export const plainTargetDomain = 'orangeplanet.club'
+export const plainTargetDomain = 'main--genmukessya.netlify.app'
 /** 完整域名 */
 export const targetDomain = `https://${plainTargetDomain}`
