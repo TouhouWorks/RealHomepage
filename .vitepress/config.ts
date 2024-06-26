@@ -200,7 +200,7 @@ export default defineConfig({
   },
   async buildEnd(siteConfig) {
     const newBuilder = buildEndGenerateOpenGraphImages({
-      baseUrl: 'https://orangeplanet.club',
+      baseUrl: 'https://main--genmukessya.netlify.app',
       category: {
         byLevel: 2,
         fallbackWithFrontmatter: true,
