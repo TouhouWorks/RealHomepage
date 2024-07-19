@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import {ref} from 'vue'
 </script>
 
 <template>
-    <div class="banner">
-        <img src="./assets/bannerPi.png" class="bannerPic">
-    </div>
+  <div class="banner">
+    <img src="./assets/bannerPi.png" class="bannerPic">
+  </div>
 </template>
-<style> 
+
+<style>
 .banner {
     z-index: 2;
     position: relative;
@@ -22,7 +22,7 @@ import {ref} from 'vue'
     .bannerPic {
     position: relative;
     top: 0px;
-    
+
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px 0px #00000040;
     width: auto;

@@ -54,7 +54,9 @@ async function getShareLink(): Promise<string> {
   if (
     window.location.hostname !== plainTargetDomain
     || window.location.pathname.length <= 20
-  ) return window.location.href
+  ) {
+    return window.location.href
+  }
 
   const url = window.location.href
 

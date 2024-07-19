@@ -24,15 +24,13 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 </script>
 
 <template>
-    
   <div class="VPHero" :class="{ 'has-image': image || heroImageSlotExists }">
     <div class="container">
-
-        <div v-if="image || heroImageSlotExists" class="image">
+      <div v-if="image || heroImageSlotExists" class="image">
         <div class="image-container">
           <div class="image-bg" />
           <slot name="home-hero-image">
-           <VPImage v-if="image" class="image-src" :image="image" />
+            <VPImage v-if="image" class="image-src" :image="image" />
           </slot>
         </div>
       </div>
@@ -41,10 +39,10 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
         <slot name="home-hero-info-before" />
         <slot name="home-hero-info">
           <h1 v-if="name" class="name">
-            <span v-html="name" class="clip"></span>
+            <span class="clip" v-html="name" />
           </h1>
-          <p v-if="text" v-html="text" class="text"></p>
-          <p v-if="tagline" v-html="tagline" class="tagline"></p>
+          <p v-if="text" class="text" v-html="text" />
+          <p v-if="tagline" class="tagline" v-html="tagline" />
         </slot>
         <slot name="home-hero-info-after" />
 
@@ -78,7 +76,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   flex-direction: column;
   align-items: center;
   max-width: 800px;
-  
+
   margin: 0 auto;
 }
 
@@ -121,7 +119,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   font-size: 32px;
   font-weight: 700;
   white-space: pre-wrap;
-  
+
 }
 
 .VPHero.has-image .name,
@@ -197,7 +195,6 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
-
 .action{
   margin-left: 6px;
 
@@ -210,7 +207,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   margin: -6px;
   margin-left: -9px;
   padding-top: 24px;
-  
+
 }
 
 .VPHero.has-image .actions {

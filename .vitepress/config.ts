@@ -9,9 +9,8 @@ import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-in
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image'
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
-import { replace } from 'lodash'
 import { githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
-import { creatorNames, creatorUsernames } from './creators'
+import { creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
 
 export default defineConfig({

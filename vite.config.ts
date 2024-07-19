@@ -11,14 +11,14 @@ import { githubRepoLink } from './metadata'
 
 export default defineConfig(async () => {
   return {
-    
+
     assetsInclude: ['**/*.mov'],
     optimizeDeps: {
       // vitepress is aliased with replacement `join(DIST_CLIENT_PATH, '/index')`
       // This needs to be excluded from optimization
-      include: [ 
-        '@nolebase/vitepress-plugin-enhanced-readabilities > @nolebase/ui > @rive-app/canvas', 
-      ], 
+      include: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities > @nolebase/ui > @rive-app/canvas',
+      ],
       exclude: [
         'vitepress',
       ],

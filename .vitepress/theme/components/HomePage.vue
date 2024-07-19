@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { VPTeamMembers } from 'vitepress/theme'
-import { Authors, creators } from '../../creators'
-import { siteName } from '../../../metadata'
 </script>
 
 <template>
@@ -9,12 +6,8 @@ import { siteName } from '../../../metadata'
     <div class="content-container">
       <main class="main">
         <div class="vp-doc" mt-10 flex flex-col items-center>
-          <h2 id="meet-the-team" font-normal op50 p="t-10 b-2">
-           
-          </h2>
-          <div w-full p-10>
-           
-          </div>
+          <h2 id="meet-the-team" font-normal op50 p="t-10 b-2" />
+          <div w-full p-10 />
         </div>
       </main>
     </div>

@@ -56,7 +56,7 @@ const ExtendedTheme: Theme = {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       'doc-top': () => [
         h(NolebaseHighlightTargetedHeading),
-       
+
       ],
       'doc-footer-before': () => [
         h(DocFooter),
