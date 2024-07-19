@@ -36,5 +36,6 @@
   "unocss.root": [
     "."
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "nuxt.isNuxtApp": false
 }
