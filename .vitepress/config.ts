@@ -1,6 +1,6 @@
 import process from 'node:process'
+import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
-import { fileURLToPath, URL } from 'node:url'
 import MarkdownItFootnote from 'markdown-it-footnote'
 import MarkdownItMathjax3 from 'markdown-it-mathjax3'
 
@@ -9,10 +9,10 @@ import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-in
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image'
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
+import { replace } from 'lodash'
 import { githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
 import { creatorNames, creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
-import { replace } from 'lodash'
 
 export default defineConfig({
   vite: {
@@ -21,9 +21,9 @@ export default defineConfig({
         {
           find: /^.*\/VPHero\.vue$/,
           replacement: fileURLToPath(new URL('./theme/components/MyVPHero.vue', import.meta.url)),
-        }
-      ]
-    }
+        },
+      ],
+    },
   },
   vue: {
     template: {
@@ -63,7 +63,7 @@ export default defineConfig({
       'link',
       {
         rel: 'alternate icon',
-        href: '/favicon.ico',
+        href: '/favicon.svg',
         type: 'image/png',
         sizes: '16x16',
       },
@@ -137,7 +137,7 @@ export default defineConfig({
   themeConfig: {
     outline: { label: '页面大纲', level: 'deep' },
     darkModeSwitchLabel: '切换主题',
-    
+
     editLink: {
       pattern: `${githubRepoLink}/tree/main/:path`,
       text: '编辑本页面',
@@ -176,7 +176,7 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '社团动态', link: '/社团动态/' },
-      { text: '关于 Nólëbase', link: '/AboutNolebase'}
+      { text: '关于 Nólëbase', link: '/AboutNolebase' },
     ],
     sidebar,
   },
