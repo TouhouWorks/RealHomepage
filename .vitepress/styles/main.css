@@ -73,22 +73,22 @@ html, body {
 }
 
 /* 标题所需要的字体 */
-@font-face {
+/* @font-face {
   font-family: tengwarannatar;
   src: url(/tengwar-annatar-glaemscrafu.woff2) format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: block;
-}
+} */
 
 /* 标题所需要的字体 */
-@font-face {
+/* @font-face {
   font-family: tengwarannatar-bold;
   src: url(/tengwar-annatar-glaemscrafu-bold.woff2) format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: block;
-}
+} */
 
 /* 首页标题样式 */
 .VPHomeHero > .container > .main > h1 {
@@ -105,7 +105,7 @@ html, body {
 /* 首页介绍样式 */
 .VPHomeHero > .container > .main > .tagline {
   padding-top: 24px;
-  
+
 }
 
 /* 自适应样式 */
