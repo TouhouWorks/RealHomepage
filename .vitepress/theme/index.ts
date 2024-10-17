@@ -36,6 +36,8 @@ import AppContainer from './components/AppContainer.vue'
 import AboutNolebase from './components/AboutNolebase.vue'
 import DocFooter from './components/DocFooter.vue'
 import HomePage from './components/HomePage.vue'
+import MyVPHero from './components/MyVPHero.vue'
+
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
 
@@ -84,6 +86,7 @@ const ExtendedTheme: Theme = {
     app.component('Share', Share)
     app.component('TocList', TocList)
     app.component('AppContainer', AppContainer)
+    app.component('MyVPHero', MyVPHero)
     app.component('NolebaseUnlazyImg', NolebaseUnlazyImg)
 
     app.provide(NolebaseEnhancedReadabilitiesInjectionKey, {

@@ -25,7 +25,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 
 <template>
   <div class="VPHero" :class="{ 'has-image': image || heroImageSlotExists }">
-    <div class="container">
+    <div class="Mycontainer">
       <div v-if="image || heroImageSlotExists" class="image">
         <div class="image-container">
           <div class="image-bg" />
@@ -71,17 +71,37 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;
   top: 10%;
 }
-.container {
-  display: block;
+
+@media (min-width: 641px) and (max-width: 860px) {
+  .VPHero {
+  margin-top: (var(--vp-nav-height)) + var(--vp-layout-top-height, 0px);
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 24px;
+  top: 10%;
+}
+}
+
+@media (max-width: 640px) {
+  .VPHero {
+  margin-top: (var(--vp-nav-height)) ;
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 24px;
+  top: 10%;
+}
+}
+
+
+.Mycontainer {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 860px;
 
   margin: 0 auto;
 }
 
 .main {
   position: relative;
+  justify-content: center;
   z-index: 10;
   order: 2;
   flex-grow: 1;
@@ -108,6 +128,19 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 
   .VPHero.has-image .main {
     max-width: 1152px; /* orginal: 592px */
+  }
+}
+
+@media (min-width: 640px) and (max-width: 860px){
+  .main {
+    padding-left: 0%;
+    margin-top: 8%;
+  }
+}
+@media (max-width: 640px){
+  .main {
+    padding-right: 5%;
+    margin-top: 3%;
   }
 }
 
@@ -152,7 +185,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 .tagline {
   position: relative;
   padding-top: 8px;
-  max-width: auto - 312px;
+  max-width: auto - 256px;
   line-height: 28px;
   font-size: 18px;
   font-weight: 500;
@@ -166,8 +199,10 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 
 @media (min-width: 860px) {
   .tagline {
-    padding-left: 16%;
+    left: -9%;
+    padding-left: 22%;
     line-height: 36px;
+    max-width: auto;
     font-size: 24px;
   }
 
@@ -176,9 +211,10 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 860px){
   .tagline {
-    left: -7%;
+    
+    left: -10%;
     padding-top: 12px;
     max-width: auto;
     line-height: 32px;
@@ -191,13 +227,14 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 @media (max-width: 639px) {
   .tagline
   {
-    left: -8%;
+    
+    left: -6%;
   }
 }
 
 .action{
-  margin-left: 6px;
-
+  margin-left: 5%;
+ 
 }
 
 .actions {
@@ -205,7 +242,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   display: flex;
   flex-wrap: wrap;
   margin: -6px;
-  margin-left: -9px;
+  margin-left: 0vw;
   padding-top: 24px;
 
 }
@@ -214,13 +251,21 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   justify-content: center;
 }
 
-@media (max-width: 639px) {
+@media (min-width: 860px) {
   .actions {
+    margin-left: -30%;
+    padding-top: 32px;
+  }
+}
+
+@media ( min-width: 640px) and (max-width: 860px) {
+  .actions {
+    margin-left: -20%;
     left: -8%;
   }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .actions {
     justify-content: flex-start;
     left: -10%;
@@ -228,12 +273,6 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   }
 }
 
-@media (min-width: 860px) {
-  .actions {
-    left: -17.5%;
-    padding-top: 32px;
-  }
-}
 
 .image-container {
   position: relative;
@@ -294,8 +333,8 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
   top: 50%;
   /*rtl:ignore*/
   left: 50%;
-  max-width: 192px;
-  max-height: 192px;
+  max-width: 356px;
+  max-height: 356px;
   /*rtl:ignore*/
   transform: translate(-50%, -50%);
 }
